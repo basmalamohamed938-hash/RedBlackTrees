@@ -5,7 +5,7 @@ from .print_stats import print_stats
 
 class Dictionary:
     def __init__(self):
-        from rbtree import RBTree
+        from RBTree import RBTree
         self.tree = RBTree()
     
     def load_from_file(self, filename):
