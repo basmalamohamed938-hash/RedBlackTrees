@@ -6,6 +6,7 @@ from .fix_insert import fix_insert
 from .height import get_height, calculate_height
 from .black_height import get_black_height, calculate_black_height
 from .size import get_size, calculate_size
+from .calculations import get_size,get_height,get_black_height
 
 class RBTree:
     def __init__(self):
