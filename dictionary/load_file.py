@@ -14,11 +14,3 @@ def load_from_file(dictionary, filename):
         print(f"ERROR: File '{filename}' not found!")
     except Exception as e:
         print(f"ERROR loading file: {e}")
-
-def _print_stats(dictionary):
-    """Internal method to print statistics."""
-    print("-" * 40)
-    print(f"Dictionary Size: {dictionary.tree.get_size()} words")
-    print(f"Tree Height: {dictionary.tree.get_height()}")
-    print(f"Black Height: {dictionary.tree.get_black_height()}")
-    print("-" * 40)
