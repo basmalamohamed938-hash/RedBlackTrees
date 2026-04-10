@@ -1,4 +1,4 @@
-from model  import RBNode
+from model.RBNode import RBNode
 
 def create_null_leaf():
     """Create a sentinel NULL leaf node."""

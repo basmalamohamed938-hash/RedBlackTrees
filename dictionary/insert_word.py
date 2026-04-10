@@ -3,7 +3,7 @@ from dictionary.print_stats import print_stats
 def insert_word(dictionary, word):
     """Insert a single word into dictionary and update file."""
     # Check if word already exists
-    if dictionary.tree.search(word):
+    if dictionary.tree.search(word) == "YES":
         print(f"ERROR: Word '{word}' already in the dictionary!")
         return False
     

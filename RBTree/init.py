@@ -4,7 +4,6 @@ from .search import search
 from .rotations import rotate_left, rotate_right
 from .fix_insert import fix_insert
 from .calculations import get_height, get_black_height, get_size
-from .calculations import get_size,get_height,get_black_height
 
 class RBTree:
     def __init__(self):
@@ -21,13 +20,13 @@ class RBTree:
         return search(self.root, value)
     
     def get_height(self):
-        return get_height(self)
+        return get_height(self.root)
     
     def get_black_height(self):
-        return get_black_height(self)
+        return get_black_height(self.root)
     
     def get_size(self):
-        return get_size(self)
+        return get_size(self.root)
     
     def get_root(self):
         return self.root

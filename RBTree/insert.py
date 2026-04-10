@@ -1,4 +1,4 @@
-from model import RBNode
+from model.RBNode import RBNode
 from .helpers import bst_insert
 from .fix_insert import fix_insert
 
