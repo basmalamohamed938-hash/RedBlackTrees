@@ -1,3 +1,5 @@
+from dictionary.print_stats import print_stats
+
 def insert_word(dictionary, word):
     """Insert a single word into dictionary and update file."""
     # Check if word already exists
