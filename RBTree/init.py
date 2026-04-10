@@ -18,7 +18,7 @@ class RBTree:
     
     # Student 2 functions
     def search(self, value):
-        return search(self, value)
+        return search(self.root, value)
     
     def get_height(self):
         return get_height(self)

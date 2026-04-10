@@ -17,5 +17,5 @@ def insert_word(dictionary, word):
         print(f"Warning: Could not update file - {e}")
     
     # Print statistics after insertion
-    _print_stats(dictionary)
+    print_stats(dictionary)
     return True
