@@ -1,3 +1,5 @@
+from dictionary import print_stats
+
 def load_from_file(dictionary, filename):
     """Load dictionary from text file (one word per line)."""
     try:
@@ -9,7 +11,7 @@ def load_from_file(dictionary, filename):
                     if not dictionary.tree.search(word):
                         dictionary.tree.insert(word)
         print(f"Dictionary loaded successfully from {filename}")
-        _print_stats(dictionary)
+        print_stats(dictionary)
     except FileNotFoundError:
         print(f"ERROR: File '{filename}' not found!")
     except Exception as e:
